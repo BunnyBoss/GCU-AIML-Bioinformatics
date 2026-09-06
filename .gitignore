@@ -1,0 +1,13 @@
+# Backup & cache
+bk/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Instructor-only materials (kept locally, never pushed to remote)
+instructor_resources/
+
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
