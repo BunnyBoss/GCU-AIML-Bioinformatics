@@ -1,6 +1,6 @@
 # File Migration Mapping & Architecture Transition Guide
 **Course Code:** 02BMSBI24365 — AI and ML in Bioinformatics  
-**Audience:** Students & Instructor, M.Sc. Bioinformatics, Gordon City University (GCU)  
+**Audience:** Students & Instructor, M.Sc. Bioinformatics, Garden City University (GCU)  
 
 This guide provides a direct lookup table showing where existing files from the initial `Day1/` and `Day2/` folders have moved within the new semantic repository structure.
 

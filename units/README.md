@@ -67,3 +67,12 @@ This document outlines exactly what each unit entails, the core topics covered, 
 * **4.3 Model Interpretation & Evaluation (Explainable AI):**
   * *Topics:* SHAP, LIME.
   * *Biology Example:* If your neural network says a patient has cancer, a doctor needs to know *why*. Tools like SHAP allow the AI to "explain" its logic by highlighting which specific genes or pixels in an MRI led to its diagnosis, making the AI trustworthy for clinical use.
+
+---
+
+## AI Assistance Policy for Unit Guides & Notebooks
+
+* **Assigned Policy:** `Full AI (Learning Aid)`
+* **Usage Guidance:** All instructional notebooks, guides, and theory primers in the `units/` directory are non-assessed learning resources. You are fully encouraged to use AI tools (e.g., ChatGPT, Claude, GitHub Copilot) to explain biological concepts, translate code syntax, generate supplementary biology examples, and quiz your understanding.
+* **Assessments Distinction:** When transitioning from these unit guides into laboratory practicals ([labs/](../labs/)) or graded assessments ([assessments/](../assessments/)), always check the designated `ai_tier` frontmatter field in those specific documents, as assessed activities enforce stricter boundaries (such as Tier 1 or Tier 2).
+

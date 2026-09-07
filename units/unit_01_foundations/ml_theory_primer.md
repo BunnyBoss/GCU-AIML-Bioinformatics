@@ -1,4 +1,17 @@
+---
+course_code: 02BMSBI24365
+course_title: AI and ML in Bioinformatics
+institution: Garden City University (GCU)
+program: M.Sc. Bioinformatics (Semester III)
+unit: Unit 1 — Foundations of Machine Learning for Bioinformatics
+submodule: 1.1 Introduction to Machine Learning in Bioinformatics
+document_type: Theory Primer
+ai_tier: Full AI (Learning Aid)
+---
+
 # Machine Learning Theory Primer: The Basics
+
+<small><b>Course Code:</b> 02BMSBI24365 | <b>Program:</b> M.Sc. Bioinformatics (Semester III) | <b>Institution:</b> Garden City University (GCU) | <b>AI Tier:</b> Full AI (Learning Aid)</small>
 
 *A quick, code-free guide to understanding the core concepts of Machine Learning before we dive into the practical exercises.*
 
@@ -44,16 +57,16 @@ We give the computer the Features (clues) **AND** the Targets (answers).
 
 **Two Types of Supervised Learning:**
 1.  **Classification:** Predicting a specific category or class *(e.g., Is this tumor Benign or Malignant?)*
-    *   👉 **[Dive Deeper: Natural vs. Artificial Learning (Classification)](./Day2_DeepDive_Classification.md)**
+    *   👉 **[Dive Deeper: Natural vs. Artificial Learning (Classification)](../unit_02_classical_ml/deep_dive_classification.md)**
 2.  **Regression:** Predicting a continuous numerical value *(e.g., What is the exact price of this house?)*
-    *   👉 **[Dive Deeper: Natural vs. Artificial Learning (Regression)](./Day2_DeepDive_Regression.md)**
+    *   👉 **[Dive Deeper: Natural vs. Artificial Learning (Regression)](./deep_dive_regression.md)**
 
 ### Unsupervised Learning (Learning without a Teacher)
 We give the computer the Features (clues), but **NO** Targets (answers). The computer has to find hidden structure on its own without predefined labels.
 
 **Two Types of Unsupervised Learning:**
 1.  **Clustering:** Discovering hidden groupings within unlabeled data *(e.g., Grouping mixed fruits or unknown viruses)*. It helps us discover things we didn't even know existed (like finding a brand new subtype of cancer).
-    *   👉 **[Dive Deeper: Natural vs. Artificial Learning (Unsupervised Clustering)](./Day2_DeepDive_Unsupervised.md)**
+    *   👉 **[Dive Deeper: Natural vs. Artificial Learning (Unsupervised Clustering)](../unit_02_classical_ml/deep_dive_unsupervised.md)**
 2.  **Dimensionality Reduction:** Compressing massive, complex datasets down to their most important features so humans can visualize them *(e.g., Visualizing 20,000 genes on a simple 2D plot)*.
 
 ---

@@ -1,0 +1,63 @@
+## Garden City University
+### Programme: M.Sc. Bioinformatics
+#### 02BMSBI24365: AI and ML in Bioinformatics
+
+---
+
+
+## Objectives of Development
+
+* Acquire a deep knowledge of various AI & machine learning algorithms, including classification, regression, clustering, and dimensionality reduction, tailored to address bioinformatics-specific tasks.
+* Learn to clean, pre-process, and integrate diverse biological data sources, such as genomic sequences, gene expression profiles, and protein structures, optimizing them for AI & machine learning analysis.
+* Develop skills to identify relevant features within biological data and create new informative features, enhancing the performance of machine learning models for tasks like biomarker identification and disease prediction.
+* Learn techniques to interpret machine learning outcomes, evaluate model performance, and extract biologically meaningful insights, enabling informed decision-making in research and applications like drug discovery and personalized medicine.
+
+---
+
+## Unit – 1: Foundations of Machine Learning for Bioinformatics
+
+* **1.1 Introduction to Machine Learning in Bioinformatics:** Overview of ML; types of ML (supervised, unsupervised); applications in bioinformatics (gene prediction, disease classification)
+* **1.2 Data Preprocessing & Feature Engineering:** Handling missing biological data; normalization & standardization; encoding biological sequences (k-mers, one-hot encoding)
+* **1.3 Supervised Learning – Regression:** Linear & polynomial regression; evaluation metrics (MSE, MAE, R²)
+* **1.4 Biological Data Regression Applications:** Gene expression prediction; biological measurement estimation
+
+---
+
+## Unit – 2: Machine Learning Techniques
+
+* **2.1 Supervised Learning – Classification:** Logistic regression, Decision Trees, Random Forest.
+* **2.2 Unsupervised Learning – Clustering:** K-Means, Hierarchical clustering; PCA for dimensionality reduction
+* **2.3 Model Evaluation & Optimization:** Confusion matrix (TP, TN, FP, FN); Accuracy, Precision, Recall, F1-score; cross-validation; hyperparameter tuning
+* **2.4 Introduction to ML Pipelines:** End-to-end workflow using Scikit-learn pipelines
+
+---
+
+## Unit – 3: Deep Learning for Biological Data
+
+* **3.1 Artificial Neural Networks (ANNs):** Basics, forward propagation, training concepts.
+* **3.2 Deep Learning Frameworks:** Introduction to TensorFlow and Keras; building simple neural network models.
+* **3.3 CNN & Sequence Models:** CNNs for biological images; introduction to RNN/LSTM for sequence data.
+* **3.4 Transformers, Generative AI & Agentic AI in Bioinformatics:** Attention mechanism; Transformers in sequence analysis; introduction to LLMs in biology.
+
+---
+
+## Unit – 4: AI Applications in Bioinformatics
+
+* **4.1 Biological Data Analysis using ML:** Gene expression classification; disease prediction models.
+* **4.2 Sequence Analysis using ML:** Motif detection; protein classification.
+* **4.3 Model Interpretation & Evaluation.**
+
+---
+
+## Lab Experiments
+
+1. Preprocess gene expression dataset (normalization)
+2. Build regression model for biological data
+3. Train classification model (Random Forest)
+4. Evaluate model using confusion matrix
+5. Perform clustering (K-Means on gene data)
+6. Build ANN using TensorFlow/Keras
+7. Apply CNN on biological image dataset (basic)
+8. Sequence classification using simple DL model
+9. Interpret model using SHAP/LIME
+10. Mini project: disease prediction or variant classification

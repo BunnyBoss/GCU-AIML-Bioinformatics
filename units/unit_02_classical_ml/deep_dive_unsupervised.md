@@ -1,4 +1,19 @@
+---
+course_code: 02BMSBI24365
+course_title: AI and ML in Bioinformatics
+institution: Garden City University (GCU)
+program: M.Sc. Bioinformatics (Semester III)
+unit: Unit 2 — Classical Machine Learning Algorithms
+submodule: 2.3 Unsupervised Learning & Clustering
+document_type: Guided Deep Dive (Unsupervised Learning)
+ai_tier: Full AI (Learning Aid)
+---
+
 # Section 1 — How Do We Group Unknown Fruits?
+
+<small><b>Course Code:</b> 02BMSBI24365 | <b>Program:</b> M.Sc. Bioinformatics (Semester III) | <b>Institution:</b> Garden City University (GCU) | <b>AI Tier:</b> Full AI (Learning Aid)</small>
+
+---
 
 <img src="./assets/clustering_mixed_fruits.png" alt="Clustering Infographic" width="600"/>
 

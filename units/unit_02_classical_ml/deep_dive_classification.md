@@ -1,4 +1,19 @@
+---
+course_code: 02BMSBI24365
+course_title: AI and ML in Bioinformatics
+institution: Garden City University (GCU)
+program: M.Sc. Bioinformatics (Semester III)
+unit: Unit 2 — Classical Machine Learning Algorithms
+submodule: 2.2 Classification Algorithms
+document_type: Guided Deep Dive (Classification)
+ai_tier: Full AI (Learning Aid)
+---
+
 # Section 1 — How Do We Learn to Recognize Fruits?
+
+<small><b>Course Code:</b> 02BMSBI24365 | <b>Program:</b> M.Sc. Bioinformatics (Semester III) | <b>Institution:</b> Garden City University (GCU) | <b>AI Tier:</b> Full AI (Learning Aid)</small>
+
+---
 
 <img src="./assets/classification_apple_orange.png" alt="Classification Infographic" width="600"/>
 

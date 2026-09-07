@@ -1,4 +1,19 @@
+---
+course_code: 02BMSBI24365
+course_title: AI and ML in Bioinformatics
+institution: Garden City University (GCU)
+program: M.Sc. Bioinformatics (Semester III)
+unit: Unit 1 — Foundations of Machine Learning for Bioinformatics
+submodule: 1.1 Introduction to Machine Learning in Bioinformatics
+document_type: Guided Deep Dive (Regression)
+ai_tier: Full AI (Learning Aid)
+---
+
 # Section 1 — How Do We Predict the Price of a House?
+
+<small><b>Course Code:</b> 02BMSBI24365 | <b>Program:</b> M.Sc. Bioinformatics (Semester III) | <b>Institution:</b> Garden City University (GCU) | <b>AI Tier:</b> Full AI (Learning Aid)</small>
+
+---
 
 <img src="./assets/regression_house_price.png" alt="Regression Infographic" width="600"/>
 
