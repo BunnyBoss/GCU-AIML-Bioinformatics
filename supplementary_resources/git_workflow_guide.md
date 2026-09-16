@@ -25,7 +25,58 @@ In computational biology and biomedical data science, research workflows evolve 
 
 ---
 
-## 2. The Git Mental Model: The Three Local Trees + Remote
+## 2. Quick-Start: The Easiest Way to Maintain Your Course Repository
+
+If you only need to keep your course files up-to-date and save your daily workshop exercises without worrying about complex Git commands, follow this simple routine:
+
+![Quick-Start Workflow](assets/quick_start_workflow.jpg)
+
+### First-Time Setup
+
+Run the following commands in your VS Code terminal:
+
+```bash
+git clone https://github.com/BunnyBoss/GCU-AIML-Bioinformatics.git
+cd GCU-AIML-Bioinformatics
+```
+
+---
+
+### Every Session Workflow
+
+Always ensure your terminal is inside the repository folder (`cd GCU-AIML-Bioinformatics`).
+
+#### 1. At the Beginning of the Session
+Run:
+```bash
+./supplementary_resources/start_session.sh
+```
+**What this script does:**
+* Runs `git pull origin main` to pull the latest lecture notes, exercises, and sample code released by the instructor.
+* Automatically creates/verifies your personal folder: `student_space/`.
+
+#### 2. Working in `student_space/`
+* **Copy any `.ipynb` notebook or script** from any day/module into `student_space/` to make your own edits, write notes, and run code.
+* **Safe from updates:** Because upstream updates only touch course curriculum folders, working inside `student_space/` guarantees your custom edits will never cause merge conflicts or get overwritten when running `start_session.sh`.
+
+#### 3. At the End of the Session
+Run:
+```bash
+./supplementary_resources/end_session.sh
+```
+**What this script does:**
+* Stages all your personal edits within `student_space/` (`git add student_space/`).
+* Records a permanent local Git snapshot (`git commit -m "Session's work"`), keeping your day's work safely preserved in version history.
+
+---
+
+## Additional Git Concepts & Commands (To Learn More)
+
+The sections below provide a deeper understanding of Git fundamentals, branching, and advanced team workflows for bioinformatics projects.
+
+---
+
+## 3. The Git Mental Model: The Three Local Trees + Remote
 
 Git tracks snapshots of your files over time. Understanding the four operational areas is key to mastering Git:
 
@@ -43,14 +94,14 @@ Git tracks snapshots of your files over time. Understanding the four operational
 
 ---
 
-## 3. Initial Configuration (Run Once)
+## 4. Initial Configuration (Run Once)
 
 Before making your first commit, configure your identity so your contributions are correctly attributed:
 
 ```bash
 # Set your name and email (use the same email registered with GitHub)
 git config --global user.name "Your Name"
-git config --global user.email "your.email@university.edu"
+git config --global user.email "your@email.com"
 
 # Set the default branch name to main
 git config --global init.defaultBranch main
@@ -61,17 +112,13 @@ git config --list
 
 ---
 
-## 4. Daily Core Workflow: Step-by-Step
+## 5. Generic Workflow Overview: Step-by-Step
 
 ### Step A: Starting or Cloning a Project
 ```bash
-# Scenario 1: Initialize a brand-new local repository
-cd my_bioinformatics_project/
-git init
-
-# Scenario 2: Clone an existing remote repository from GitHub
-git clone https://github.com/YourUsername/bioinformatics-ml-curriculum.git
-cd bioinformatics-ml-curriculum/
+# Clone the course repository from GitHub
+git clone https://github.com/BunnyBoss/GCU-AIML-Bioinformatics.git
+cd GCU-AIML-Bioinformatics
 ```
 
 ### Step B: Checking Status & Inspecting Changes
@@ -100,21 +147,16 @@ git commit -m "Add log2 normalization and missing value imputation to RNA-seq pi
 
 ### Step D: Synchronizing with GitHub (Pushing & Pulling)
 ```bash
-# Link a local repository to a new empty GitHub repository (first time only)
-git remote add origin https://github.com/YourUsername/my_bioinformatics_project.git
-git branch -M main
-git push -u origin main
-
-# Subsequent pushes (after making new commits)
-git push
-
 # Fetch and integrate the latest changes made by collaborators from GitHub
 git pull origin main
+
+# Push committed changes to GitHub (if you have push permissions or work on your fork)
+git push origin main
 ```
 
 ---
 
-## 5. Branching & Isolated Development
+## 6. Branching & Isolated Development
 
 Branches allow you to build new features, test different ML architectures, or fix bugs in complete isolation from the stable `main` branch.
 
@@ -145,7 +187,7 @@ git branch -d feature/xgboost-classification
 
 ---
 
-## 6. The Critical `.gitignore` for Biological Data & Machine Learning
+## 7. The Critical `.gitignore` for Biological Data & Machine Learning
 
 **Rule of Thumb:** Never commit large raw data files, sensitive clinical credentials, or heavy temporary binaries into Git. Git is designed for text/code; storing multi-gigabyte genomic files will bloat your repository and cause GitHub push rejections (GitHub limits individual files to 100MB).
 
@@ -201,7 +243,7 @@ Thumbs.db
 
 ---
 
-## 7. Inspecting History & Undoing Mistakes Safely
+## 8. Inspecting History & Undoing Mistakes Safely
 
 ### Viewing History:
 ```bash
@@ -229,11 +271,10 @@ git revert <commit_hash>
 
 ---
 
-## 8. Summary Command Cheat Sheet
+## 9. Summary Command Cheat Sheet
 
 | Command | What It Does |
 |---|---|
-| `git init` | Initialize a new local Git repository in the current folder |
 | `git clone <url>` | Download a remote repository and its full history |
 | `git status` | Show changed, staged, and untracked files |
 | `git diff` | Show exact line additions/deletions not yet staged |
@@ -247,7 +288,7 @@ git revert <commit_hash>
 
 ---
 
-## 9. Curated Resources for Further Learning
+## 10. Curated Resources for Further Learning
 
 To deepen your mastery of version control, explore these resources:
 
