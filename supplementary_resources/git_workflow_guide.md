@@ -27,7 +27,9 @@ In computational biology and biomedical data science, research workflows evolve 
 
 ## 2. Quick-Start: The Easiest Way to Maintain Your Course Repository
 
-If you only need to keep your course files up-to-date and save your daily workshop exercises without worrying about complex Git commands, follow this simple routine.
+If you only need to keep your course files up-to-date and save your daily workshop exercises without worrying about complex Git commands, follow this simple routine:
+
+![Quick-Start Workflow](assets/quick_start_workflow.jpg)
 
 ### First-Time Setup
 
