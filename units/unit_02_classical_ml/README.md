@@ -47,8 +47,13 @@ High-throughput biological studies typically confront the **curse of dimensional
 
 | File / Resource | Type | Description |
 |---|---|---|
-| [deep_dive_classification.md](deep_dive_classification.md) | Technical Guide | Complete mathematical and practical breakdown of Logistic Regression, Trees, Random Forests, and SVMs. |
-| [deep_dive_unsupervised.md](deep_dive_unsupervised.md) | Technical Guide | In-depth theory on $K$-Means, Hierarchical clustering, distance metrics, and PCA mathematical formulation. |
+| [2.2_unsupervised_learning_primer.md](2.2_unsupervised_learning_primer.md) | Theory Primer | Comprehensive guide on Dimensionality Reduction (PCA, t-SNE) and Clustering (K-Means, Hierarchical). |
+| [2.2_unsupervised_learning.ipynb](2.2_unsupervised_learning.ipynb) | Interactive Notebook | Hands-on PCA, t-SNE, K-Means elbow/silhouette, dendrograms, and clustermaps. |
+| [2.3_model_evaluation_primer.md](2.3_model_evaluation_primer.md) | Theory Primer | Diagnostic metrics, clinical cost of errors, ROC-AUC, PR curves, and cross-validation. |
+| [2.3_model_evaluation_metrics.ipynb](2.3_model_evaluation_metrics.ipynb) | Interactive Notebook | Hands-on Confusion matrices, sensitivity/precision, ROC-AUC, and regression residuals. |
+| [2.4_end_to_end_ml_pipeline.ipynb](2.4_end_to_end_ml_pipeline.ipynb) | Interactive Notebook | Leak-free Scikit-learn Pipeline architecture for classification and regression. |
+| [deep_dive_classification.md](deep_dive_classification.md) | Technical Guide | Complete breakdown of supervised classification concepts, features, labels, and algorithms. |
+| [deep_dive_unsupervised.md](deep_dive_unsupervised.md) | Technical Guide | Natural vs. artificial learning intuition and unsupervised fruit clustering walkthrough. |
 | [assets/](assets/) | Visual Diagrams | Architecture diagrams, decision boundary plots, and confusion matrix visualizations. |
 
 ---
