@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Linear Regression Visualization</title>
+
+    <script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+</head>
+
+<body>
+
+<div id="calculator"
+     style="width: 800px; height: 800px;">
+</div>
+
+<script>
+
+    var elt = document.getElementById('calculator');
+
+    var calculator = Desmos.GraphingCalculator(elt, {
+        keypad: false,
+        expressions: true,
+        settingsMenu: false,
+        zoomButtons: true
+    });
+
+    calculator.setExpression({
+        id: 'line',
+        latex: 'y=mx+c'
+    });
+
+    calculator.setExpression({
+        id: 'm',
+        latex: 'm=1'
+    });
+
+    calculator.setExpression({
+        id: 'c',
+        latex: 'c=0'
+    });
+
+    calculator.setMathBounds({
+        left: 0,
+        right: 10,
+        bottom: 0,
+        top: 10
+    });
+
+</script>
+
+</body>
+</html>
+
+
+"from IPython.display import HTML
+from pathlib import Path
+
+html_file = Path("assets/Scripts/linear.html")
+HTML(html_file.read_text())"
