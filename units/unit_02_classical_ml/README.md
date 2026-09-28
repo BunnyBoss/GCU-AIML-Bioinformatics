@@ -47,6 +47,10 @@ High-throughput biological studies typically confront the **curse of dimensional
 
 | File / Resource | Type | Description |
 |---|---|---|
+| [2.1_regression_models_primer.md](2.1_regression_models_primer.md) | Theory Primer | Continuous predictions: Ordinary Least Squares (OLS), biomarker weights, dose-response curves, and polynomial expansion. |
+| [2.1_regression_models.ipynb](2.1_regression_models.ipynb) | Interactive Notebook | Hands-on Linear & Polynomial Regression: Residual minimization, biomarker discovery, dose-response kinetics, and residual diagnostics. |
+| [2.1_classification_models_primer.md](2.1_classification_models_primer.md) | Theory Primer | Discrete disease states: Logistic regression, odds ratios, decision trees, Gini impurity, and random forest ensembles. |
+| [2.1_classification_models.ipynb](2.1_classification_models.ipynb) | Interactive Notebook | Hands-on Supervised Classification: Logistic sigmoid, Odds Ratios, Decision Tree rule extraction, and Random Forest biomarker discovery. |
 | [2.2_unsupervised_learning_primer.md](2.2_unsupervised_learning_primer.md) | Theory Primer | Comprehensive guide on Dimensionality Reduction (PCA, t-SNE) and Clustering (K-Means, Hierarchical). |
 | [2.2_unsupervised_learning.ipynb](2.2_unsupervised_learning.ipynb) | Interactive Notebook | Hands-on PCA, t-SNE, K-Means elbow/silhouette, dendrograms, and clustermaps. |
 | [2.3_model_evaluation_primer.md](2.3_model_evaluation_primer.md) | Theory Primer | Diagnostic metrics, clinical cost of errors, ROC-AUC, PR curves, and cross-validation. |
