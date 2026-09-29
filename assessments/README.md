@@ -23,6 +23,7 @@ The evaluation for `02BMSBI24365` is divided into Continuous Internal Assessment
 ## Folder Contents
 
 * [diagnostic_baseline_quiz.md](diagnostic_baseline_quiz.md): 10-question diagnostic quiz administered during Week 1 to assess prerequisite comfort across programming, mathematics, and molecular biology.
+* [day_10_comprehensive_quiz.md](day_10_comprehensive_quiz.md): 18-question comprehensive synthesis assessment quiz (20 minutes) administered during Day 10 covering ML foundations, data preprocessing & scaling, diagnostic evaluation metrics, PCA, core regression models, and Scikit-learn syntax.
 
 ---
 
