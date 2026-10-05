@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+ text { font-family: 'Chalkboard SE', 'Comic Sans MS', sans-serif; fill: #1f3a5f; }
+ .title { font-size: 46px; font-weight: bold; }
+ .label { font-size: 30px; font-weight: bold; }
+ .small { font-size: 25px; }
+ .tiny { font-size: 21px; }
+ .line { fill: none; stroke: #1f3a5f; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+ .thin { fill: none; stroke: #1f3a5f; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+<text x="80" y="80" class="title">The matrix dot product</text>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#1f3a5f"/></marker></defs><text x="360" y="200" class="label" text-anchor="middle">wᵀ</text><text x="1020" y="200" class="label" text-anchor="middle">x</text>
+<rect x="150" y="260" width="420" height="130" rx="15" fill="#eef4f7" stroke="#1f3a5f" stroke-width="7"/>
+<text x="245" y="345" class="label" text-anchor="middle">5</text><text x="360" y="345" class="label" text-anchor="middle">2</text><text x="475" y="345" class="label" text-anchor="middle">−3</text>
+<path d="M210 275 V375 M325 275 V375 M440 275 V375" class="thin"/>
+<path d="M910 245 H1130 M910 245 V680 M1130 245 V680 M910 680 H1130" class="line"/>
+<text x="1020" y="345" class="label" text-anchor="middle">1</text><text x="1020" y="480" class="label" text-anchor="middle">0</text><text x="1020" y="615" class="label" text-anchor="middle">1</text>
+<path d="M570 325 C690 300 790 285 910 345 M570 325 C700 370 790 445 910 480 M570 325 C700 450 790 580 910 615" class="thin" stroke="#d96c4f"/>
+<text x="800" y="280" class="small" text-anchor="middle">pair • multiply • add</text>
+<path d="M250 470 C410 520 550 520 680 470" class="line" marker-end="url(#arrow)"/>
+<text x="470" y="570" class="small" text-anchor="middle">matching elements meet</text>
+<rect x="170" y="710" width="1260" height="125" rx="18" fill="#fff8e9" stroke="#e0a83a" stroke-width="7"/>
+<text x="800" y="790" class="label" text-anchor="middle">(5 × 1) + (2 × 0) + (−3 × 1) = 2</text>
+</svg>

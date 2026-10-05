@@ -3,6 +3,17 @@ bk/
 .ipynb_checkpoints/
 __pycache__/
 *.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv/
+.venv_tmp/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # Instructor-only materials (kept locally, never pushed to remote)
 instructor_resources/
@@ -11,3 +22,4 @@ instructor_resources/
 .DS_Store
 .vscode/
 .idea/
+CLAUDE.md

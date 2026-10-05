@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+ text { font-family: 'Chalkboard SE', 'Comic Sans MS', sans-serif; fill: #1f3a5f; }
+ .title { font-size: 46px; font-weight: bold; }
+ .label { font-size: 30px; font-weight: bold; }
+ .small { font-size: 25px; }
+ .tiny { font-size: 21px; }
+ .line { fill: none; stroke: #1f3a5f; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+ .thin { fill: none; stroke: #1f3a5f; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+<text x="80" y="80" class="title">Activation functions</text>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#1f3a5f"/></marker></defs><path d="M800 135 L800 900" stroke="#cad7df" stroke-width="4" stroke-dasharray="14 18"/>
+<text x="400" y="150" class="label" text-anchor="middle">Sigmoid</text><text x="1200" y="150" class="label" text-anchor="middle">ReLU</text>
+<path d="M150 700 H700 M400 300 V780" class="line"/><text x="670" y="740" class="small">input score</text><text x="420" y="325" class="small">output</text>
+<text x="350" y="335" class="tiny">1.0</text><text x="350" y="705" class="tiny">0.0</text>
+<path d="M165 690 C250 690 285 680 320 645 C370 590 370 520 400 500 C430 480 430 410 480 365 C530 325 600 315 685 310" fill="none" stroke="#d96c4f" stroke-width="10" stroke-linecap="round"/>
+<text x="400" y="850" class="small" text-anchor="middle">Squishes to probability</text>
+<path d="M920 700 H1460 M1190 300 V780" class="line"/><text x="1430" y="740" class="small">input score</text><text x="1210" y="325" class="small">output</text>
+<text x="1030" y="705" class="tiny">0</text>
+<path d="M930 700 H1190 L1430 350" fill="none" stroke="#4b9b78" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1190" y="850" class="small" text-anchor="middle">Flat at 0, then linear</text>
+</svg>

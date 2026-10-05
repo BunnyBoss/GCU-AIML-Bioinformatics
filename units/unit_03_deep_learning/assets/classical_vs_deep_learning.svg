@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+ text { font-family: 'Chalkboard SE', 'Comic Sans MS', sans-serif; fill: #1f3a5f; }
+ .title { font-size: 46px; font-weight: bold; }
+ .label { font-size: 30px; font-weight: bold; }
+ .small { font-size: 25px; }
+ .tiny { font-size: 21px; }
+ .line { fill: none; stroke: #1f3a5f; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+ .thin { fill: none; stroke: #1f3a5f; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+<text x="80" y="80" class="title">Two routes to a prediction</text>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#1f3a5f"/></marker></defs>
+<path d="M800 130 L800 910" stroke="#cad7df" stroke-width="4" stroke-dasharray="14 18"/>
+<text x="310" y="145" class="label" text-anchor="middle">Classical ML</text>
+<text x="1220" y="145" class="label" text-anchor="middle">Deep Learning</text>
+<text x="310" y="185" class="small" text-anchor="middle">hand-crafted features first</text>
+<text x="1220" y="185" class="small" text-anchor="middle">learns from raw data</text>
+<rect x="115" y="270" width="390" height="270" rx="8" fill="#fbfcfd" stroke="#1f3a5f" stroke-width="7"/>
+<path d="M115 335 H505 M115 405 H505 M115 475 H505 M245 270 V540 M375 270 V540" class="thin"/>
+<text x="180" y="315" class="tiny">radius</text><text x="283" y="315" class="tiny">texture</text><text x="415" y="315" class="tiny">class</text>
+<text x="172" y="385" class="small">12.4</text><text x="283" y="385" class="small">0.72</text><text x="414" y="385" class="small">?</text>
+<text x="172" y="455" class="small">18.1</text><text x="283" y="455" class="small">0.34</text><text x="414" y="455" class="small">?</text>
+<text x="172" y="525" class="small">9.7</text><text x="283" y="525" class="small">0.81</text><text x="414" y="525" class="small">?</text>
+<text x="310" y="600" class="small" text-anchor="middle">neat spreadsheet</text>
+<path d="M520 405 C600 405 620 405 690 405" class="line" marker-end="url(#arrow)"/>
+<text x="605" y="370" class="small" text-anchor="middle">features</text>
+<circle cx="700" cy="405" r="18" fill="#e0a83a" stroke="#1f3a5f" stroke-width="5"/>
+<path d="M735 405 L790 355 M735 405 L790 455 M790 355 L840 330 M790 355 L840 380 M790 455 L840 430 M790 455 L840 480" class="line"/>
+<text x="700" y="690" class="label" text-anchor="middle">Decision Tree</text>
+<text x="700" y="730" class="small" text-anchor="middle">rules split the features</text>
+<path d="M900 385 C950 385 980 385 1015 385" class="line" marker-end="url(#arrow)"/>
+<path d="M1060 300 C1115 255 1195 270 1235 320 C1275 370 1250 430 1185 450 C1110 474 1045 425 1045 365 C1045 340 1050 320 1060 300 Z" fill="#f7e9df" stroke="#d96c4f" stroke-width="7"/>
+<circle cx="1120" cy="350" r="18" fill="white" stroke="#1f3a5f" stroke-width="5"/><circle cx="1195" cy="345" r="18" fill="white" stroke="#1f3a5f" stroke-width="5"/>
+<path d="M1140 400 Q1160 420 1180 400 M1080 315 Q1030 280 1015 245 M1220 315 Q1270 275 1300 250" class="thin"/>
+<text x="1150" y="520" class="small" text-anchor="middle">raw image / slide</text>
+<path d="M1260 405 C1300 405 1320 405 1350 405" class="line" marker-end="url(#arrow)"/>
+<text x="1305" y="370" class="small" text-anchor="middle">pixels</text>
+<g stroke="#1f3a5f" stroke-width="5" fill="white"><circle cx="1400" cy="330" r="20"/><circle cx="1470" cy="330" r="20"/><circle cx="1370" cy="405" r="20"/><circle cx="1440" cy="405" r="20"/><circle cx="1510" cy="405" r="20"/><circle cx="1400" cy="480" r="20"/><circle cx="1470" cy="480" r="20"/><path d="M1400 350 L1370 385" fill="none"/><path d="M1400 350 L1440 385" fill="none"/><path d="M1400 350 L1510 385" fill="none"/><path d="M1470 350 L1370 385" fill="none"/><path d="M1470 350 L1440 385" fill="none"/><path d="M1470 350 L1510 385" fill="none"/><path d="M1370 425 L1400 460" fill="none"/><path d="M1370 425 L1470 460" fill="none"/><path d="M1440 425 L1400 460" fill="none"/><path d="M1440 425 L1470 460" fill="none"/><path d="M1510 425 L1400 460" fill="none"/><path d="M1510 425 L1470 460" fill="none"/></g><text x="1440" y="575" class="label" text-anchor="middle">Neural Network</text><text x="1440" y="615" class="small" text-anchor="middle">layers learn representations</text>
+</svg>
