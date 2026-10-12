@@ -21,6 +21,9 @@ Unit 3 introduces **Deep Learning (DL)** architectures that learn hierarchical f
 * **Forward Propagation & Loss Functions:** Binary Cross-Entropy for disease presence; Categorical Cross-Entropy for multi-class classification; Mean Squared Error for continuous biophysical predictions.
 * **Backpropagation & Optimization:** The Chain Rule of calculus for computing error gradients; Gradient Descent, Stochastic Gradient Descent (SGD), and Adam optimizer.
 * **Regularization in Deep Networks:** Dropout, Batch Normalization, and Early Stopping to prevent memorization of small clinical cohorts.
+* **Assigned Primers:**
+  * [3.1_neural_networks_primer.md](3.1_neural_networks_primer.md) — *Part 1: Architectural Foundations & Artificial Neurons*
+  * [3.1_how_neural_networks_learn.md](3.1_how_neural_networks_learn.md) — *Part 2: Forward Propagation, Loss, Backpropagation & Training Dynamics*
 
 ### 3.2 Deep Learning Frameworks (TensorFlow & Keras)
 * **Framework Architecture:** Tensors, computation graphs, and GPU acceleration.
@@ -44,6 +47,16 @@ Unit 3 introduces **Deep Learning (DL)** architectures that learn hierarchical f
 * **Protein Language Models (pLLMs):** ESM (Evolutionary Scale Modeling), ProtBERT, and zero-shot variant effect prediction.
 * **AlphaFold & Structural Biology:** How deep attention architectures revolutionized 3D protein structure prediction from 1D sequence alone.
 * **Generative & Agentic AI in Drug Discovery:** Molecular generative models (diffusion models, VAEs) and autonomous AI agents for automated bioinformatic workflow orchestration.
+
+---
+
+## Folder Contents & Key Materials
+
+| File / Resource | Type | Description |
+|---|---|---|
+| [3.1_neural_networks_primer.md](3.1_neural_networks_primer.md) | Theory Primer (Part 1) | Architectural Foundations: Tabular bottlenecks, representation learning, biological vs. artificial neurons, dot product math ($\mathbf{w}^T\mathbf{x} + b$), activation functions (Sigmoid, ReLU), and multi-layer stacks. |
+| [3.1_how_neural_networks_learn.md](3.1_how_neural_networks_learn.md) | Theory Primer (Part 2) | Training Foundations: Forward propagation step-by-step, loss functions (BCE, CCE, MSE), backpropagation via chain rule, gradient descent & Adam, epochs/batches, and regularization (Dropout, Early Stopping, Scaling). |
+| [3.1_intro_ann_keras.ipynb](3.1_intro_ann_keras.ipynb) | Practical Notebook | Minimal Keras Workflow: 4-step implementation on our two-biomarker (*HER2/ERBB2* and *ESR1*) breast cancer cohort, untrained vs. trained predictions, loss curves, and 2D decision boundary visualization. |
 
 ---
 
