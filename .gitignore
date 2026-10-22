@@ -1,5 +1,6 @@
 # Backup & cache
 bk/
+backup_pending_curriculum/
 .ipynb_checkpoints/
 __pycache__/
 *.py[cod]
@@ -17,6 +18,9 @@ venv.bak/
 
 # Instructor-only materials (kept locally, never pushed to remote)
 instructor_resources/
+
+# Datasets raw downloads
+datasets/raw/
 
 # OS and editor files
 .DS_Store

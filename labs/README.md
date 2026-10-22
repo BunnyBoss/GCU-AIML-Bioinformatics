@@ -23,7 +23,7 @@ Each lab adheres to a standardized pedagogical format:
 
 | Lab # | Directory | Experiment Title | Primary Dataset & Biological Problem | Primary Packages |
 |---|---|---|---|---|
-| **01** | [lab_01_expression_preprocessing/](lab_01_expression_preprocessing/) | **RNA-seq Expression Preprocessing & Normalization** | Raw RNA-seq count matrix; library size normalization ($\log_2(\text{CPM}+1)$), quantile scaling, and KNN imputation. | `pandas`, `numpy`, `scipy` |
+| **01** | [lab_01_binary_classification_pipeline/](lab_01_binary_classification_pipeline/) | **End-to-End Binary Classification Pipeline (Lab Exercise 01)** | TCGA-BRCA RNA-seq expression ($n=670, p=60$); leak-free preprocessing, biomarker discovery, and benchmarking Logistic Regression, Random Forest, and Keras ANN. | `pandas`, `scikit-learn`, `tensorflow` |
 | **02** | [lab_02_biological_regression/](lab_02_biological_regression/) | **Epigenetic Clock: Biological Age Prediction** | DNA methylation beta values (Illumina Infinium arrays); Ridge & Lasso regression to estimate patient epigenetic age. | `scikit-learn`, `seaborn` |
 | **03** | [lab_03_tumor_classification/](lab_03_tumor_classification/) | **Breast Cancer Biopsy Diagnosis** | Wisconsin Diagnostic Breast Cancer (WDBC) dataset; comparing Logistic Regression, Decision Trees, and Random Forests. | `scikit-learn`, `matplotlib` |
 | **04** | [lab_04_evaluation_metrics_roc/](lab_04_evaluation_metrics_roc/) | **Clinical Diagnostic Metrics & ROC-AUC Analysis** | Skewed clinical cohort (rare disease biomarker panel); threshold tuning, Sensitivity/Specificity, PR curves, and ROC-AUC. | `scikit-learn`, `yellowbrick` |

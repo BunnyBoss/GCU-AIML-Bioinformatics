@@ -48,17 +48,30 @@ datasets/
 
 ## Downloading Datasets Locally
 
-To automatically fetch and verify all required course datasets into `datasets/raw/`, run:
+You can download course datasets using simple, direct `curl` commands or via the minimal download script [datasets/download_scripts/download_data.sh](download_scripts/download_data.sh):
 
-```bash
-# Ensure your environment is active
-conda activate gcu-aiml-bioinfo
+### 1. TCGA-BRCA PanCancer Atlas Files (cBioPortal GitHub)
+* **GitHub Repository:** [`cBioPortal/datahub - brca_tcga_pan_can_atlas_2018`](https://github.com/cBioPortal/datahub/tree/master/public/brca_tcga_pan_can_atlas_2018)
+* **Direct Script Execution:**
+  ```bash
+  # Runs 3 curl commands to fetch clinical patient, clinical sample, and mRNA matrices into datasets/raw/
+  bash datasets/download_scripts/download_data.sh
+  ```
+* **Or Direct `curl` Commands:**
+  ```bash
+  BASE="https://github.com/cBioPortal/datahub/raw/master/public/brca_tcga_pan_can_atlas_2018"
+  curl -L -o datasets/raw/data_clinical_patient.txt "$BASE/data_clinical_patient.txt"
+  curl -L -o datasets/raw/data_clinical_sample.txt  "$BASE/data_clinical_sample.txt"
+  curl -L -o datasets/raw/data_mrna_seq_v2_rsem.txt "$BASE/data_mrna_seq_v2_rsem.txt"
+  ```
 
-# Execute the automated fetch script
-python datasets/download_scripts/fetch_datasets.py
-```
+### 2. Curated Benchmark Cohort for Lab Exercise 01
+* **Location:** [labs/lab_01_binary_classification_pipeline/data/tcga_brca_expression.csv](../labs/lab_01_binary_classification_pipeline/data/tcga_brca_expression.csv)
+* **Dimensions:** 670 patient biopsies $\times$ 60 PAM50 and oncogenic driver genes (336 KB). Ready-to-use for immediate modeling without multi-gigabyte raw processing.
 
-The script performs the following:
-1. Downloads compressed archives from institutional GCU mirrors or canonical public repositories (NCBI GEO, UCI, GDC).
-2. Computes SHA256 checksums to verify file integrity.
-3. Unpacks files into `datasets/raw/<dataset_name>/`.
+### 3. NCBI GEO Microarray Series Matrix (GSE2034 Breast Cancer)
+* **Direct NCBI GEO FTP URL:** `https://ftp.ncbi.nlm.nih.gov/geo/series/GSE2nnn/GSE2034/matrix/GSE2034_series_matrix.txt.gz`
+* **Direct `wget` Command:**
+  ```bash
+  wget https://ftp.ncbi.nlm.nih.gov/geo/series/GSE2nnn/GSE2034/matrix/GSE2034_series_matrix.txt.gz -P datasets/raw/
+  ```
