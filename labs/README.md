@@ -2,51 +2,80 @@
 
 **Course Code:** `02BMSBI24365` — AI & ML in Bioinformatics  
 **Target Audience:** M.Sc. Bioinformatics (Semester III)  
-**Practicals Overview:** 10 Structured Hands-on Computational Biology Experiments  
+**Practicals Framework:** Hands-on Computational Biology Experiments  
 
 ---
 
-## Laboratory Structure & Guidelines
+## 1. Laboratory Structure & Pedagogical Standards
 
-Every practical folder in this directory represents a hands-on computational biology experiment designed to bridge theoretical algorithms with real-world biological and clinical datasets.
+Every practical experiment in this laboratory curriculum bridges theoretical machine learning algorithms with real-world biological, genomic, and clinical datasets.
 
-Each lab adheres to a standardized pedagogical format:
-1. **Biological Context & Problem Statement:** Why this computational task matters in genomics, oncology, or drug discovery.
-2. **Dataset & Feature Dictionary:** Schema of biological inputs, units of measurement, and target ground truth.
-3. **Algorithmic Implementation:** Step-by-step code walkthrough utilizing Python, Scikit-learn, TensorFlow/Keras, and specialized bioinformatics libraries.
-4. **Diagnostic Metrics & Evaluation:** Rigorous statistical evaluation (ROC-AUC, Precision-Recall, Confusion Matrices, $R^2$, RMSE).
-5. **Independent Student Challenge:** An unguided problem extension designed to test your ability to adapt the algorithm to a novel biological condition or dataset.
+Each practical exercise follows a rigorous, reproducible 5-stage architecture:
+1. **Biological Problem Statement:** Clinical context, molecular hallmarks, and the real-world significance of the computational phenotype.
+2. **Dataset & Feature Dictionary:** Schema of biological inputs, gene expression/methylation levels, units of measurement, and clinical ground truth.
+3. **Leak-Free Implementation:** Strict isolation between training and test sets using Scikit-Learn pipelines and deep learning workflows (no global scaling).
+4. **Diagnostic Metrics & Clinical Calibration:** Rigorous evaluation metrics (Sensitivity/Recall, Specificity, ROC-AUC, PR Curves) and decision threshold tuning ($\tau$) tailored to asymmetric clinical costs.
+5. **Independent Student Challenge:** An unguided problem extension designed to test your ability to adapt algorithms to novel biomarkers, loss penalties, or clinical cohorts.
 
 ---
 
-## Laboratory Practicals Index
+## 2. Active Practical (Available Now)
 
-| Lab # | Directory | Experiment Title | Primary Dataset & Biological Problem | Primary Packages |
+| Practical | Directory | Title & Focus | Biological Cohort | Primary Stack | Status |
+|---|---|---|---|---|---|
+| **Lab Exercise 01** | [lab_01_binary_classification_pipeline/](lab_01_binary_classification_pipeline/) | **End-to-End Binary Classification Pipeline** | TCGA-BRCA RNA-seq Primary Tumors ($n = 670, p = 60$); PAM50 subtype prediction (Luminal A vs. Basal-like). | `pandas`, `scikit-learn`, `tensorflow` | 🟢 **Active** |
+
+### Lab Exercise 01 Overview
+* **Folder:** [labs/lab_01_binary_classification_pipeline/](lab_01_binary_classification_pipeline/)
+* **Primary Deliverable:** [lab_01_binary_classification_pipeline.ipynb](lab_01_binary_classification_pipeline/lab_01_binary_classification_pipeline.ipynb)
+* **Practical Guide:** [labs/lab_01_binary_classification_pipeline/README.md](lab_01_binary_classification_pipeline/README.md)
+* **Dataset Asset:** `data/tcga_brca_expression.csv` (pre-assembled from raw TCGA cBioPortal files)
+* **Key Tasks:**
+  1. Ingest curated primary breast tumor cohort (670 patients $\times$ 60 PAM50 and oncogenic driver genes).
+  2. Implement strict leak-free train/test partition ($80/20$) with training-only `StandardScaler`.
+  3. Benchmark three complementary model families:
+     * **Logistic Regression:** Linear baseline with gene Odds Ratios ($\text{OR} = e^{w_j}$).
+     * **Random Forest:** 100-tree ensemble with Gini feature importance ranking.
+     * **Keras ANN:** Deep multilayer perceptron with Dropout regularization and threshold calibration ($\tau$).
+  4. Formulate a minimal 5-gene point-of-care diagnostic panel (*FOXA1*, *CDC20*, *MELK*, *KIF2C*, *EXO1*).
+
+---
+
+## 3. Semester Practical Curriculum Roadmap
+
+The subsequent hands-on experiments will be released sequentially as the course progresses through deep learning architectures, sequence modeling, and explainable AI:
+
+| Lab # | Experiment Focus | Biological Domain & Benchmark Problem | Target Stack | Curriculum Schedule |
 |---|---|---|---|---|
-| **01** | [lab_01_binary_classification_pipeline/](lab_01_binary_classification_pipeline/) | **End-to-End Binary Classification Pipeline (Lab Exercise 01)** | TCGA-BRCA RNA-seq expression ($n=670, p=60$); leak-free preprocessing, biomarker discovery, and benchmarking Logistic Regression, Random Forest, and Keras ANN. | `pandas`, `scikit-learn`, `tensorflow` |
-| **02** | [lab_02_biological_regression/](lab_02_biological_regression/) | **Epigenetic Clock: Biological Age Prediction** | DNA methylation beta values (Illumina Infinium arrays); Ridge & Lasso regression to estimate patient epigenetic age. | `scikit-learn`, `seaborn` |
-| **03** | [lab_03_tumor_classification/](lab_03_tumor_classification/) | **Breast Cancer Biopsy Diagnosis** | Wisconsin Diagnostic Breast Cancer (WDBC) dataset; comparing Logistic Regression, Decision Trees, and Random Forests. | `scikit-learn`, `matplotlib` |
-| **04** | [lab_04_evaluation_metrics_roc/](lab_04_evaluation_metrics_roc/) | **Clinical Diagnostic Metrics & ROC-AUC Analysis** | Skewed clinical cohort (rare disease biomarker panel); threshold tuning, Sensitivity/Specificity, PR curves, and ROC-AUC. | `scikit-learn`, `yellowbrick` |
-| **05** | [lab_05_unsupervised_pca_clustering/](lab_05_unsupervised_pca_clustering/) | **Cancer Subtyping via PCA & $K$-Means** | High-dimensional tumor transcriptome ($20,000$ genes); PCA variance explained, t-SNE projection, and $K$-Means patient stratification. | `scikit-learn`, `scipy` |
-| **06** | [lab_06_ann_keras_workflow/](lab_06_ann_keras_workflow/) | **Artificial Neural Networks with TensorFlow/Keras** | Multi-class tumor staging from blood serum proteomic profiles using a Multilayer Perceptron (ANN) with Dropout. | `tensorflow`, `keras` |
-| **07** | [lab_07_histopathology_cnn/](lab_07_histopathology_cnn/) | **Histopathology Image Classification via 2D-CNN** | Hematoxylin and Eosin (H&E) stained tissue image patches; training a 2D Convolutional Neural Network for automated tumor detection. | `tensorflow`, `opencv-python` |
-| **08** | [lab_08_sequence_classification_1dcnn_lstm/](lab_08_sequence_classification_1dcnn_lstm/) | **Genomic Sequence Motif Detection via 1D-CNN & LSTM** | One-hot encoded DNA promoter sequences; detecting Transcription Factor Binding Sites (TFBS) using 1D-CNN and LSTM. | `keras`, `biopython` |
-| **09** | [lab_09_xai_shap_biomarkers/](lab_09_xai_shap_biomarkers/) | **Model Interpretability & Biomarkers using SHAP** | TreeSHAP and KernelSHAP on diagnostic cancer models; extracting top gene drivers and generating patient-level force plots. | `shap`, `scikit-learn` |
-| **10** | [lab_10_capstone_project/](lab_10_capstone_project/) | **Capstone: End-to-End Multi-Omics Disease Pipeline** | Multi-omics patient survival analysis combining gene expression, clinical data, and somatic mutation status with full XAI audit. | Full ML/DL Stack |
+| **01** | **Binary Classification Pipeline** | TCGA-BRCA PAM50 Subtype Classification (Luminal A vs. Basal) | `scikit-learn`, `tensorflow` | **Active (Day 16)** |
+| **02** | **Biological Regression & Epigenetic Clocks** | DNA Methylation Beta Values; Age Prediction via Ridge/Lasso | `scikit-learn`, `scipy` | Scheduled |
+| **03** | **Tumor Diagnosis & Decision Trees** | Diagnostic Fine-Needle Aspirate Features (WDBC); Ensemble Trees | `scikit-learn`, `seaborn` | Scheduled |
+| **04** | **Clinical Metrics & Imbalanced Learning** | Rare Disease Cohort; PR-AUC, Threshold Tuning, Cost Matrices | `scikit-learn`, `yellowbrick` | Scheduled |
+| **05** | **Unsupervised Clustering & PCA** | High-Dimensional Transcriptomic Profiling; PCA & $K$-Means | `scikit-learn`, `matplotlib` | Scheduled |
+| **06** | **Deep Neural Networks (ANN)** | Proteomic Serum Profiles; Multi-layer Perceptron with Keras | `tensorflow`, `keras` | Scheduled |
+| **07** | **Histopathology Image Classification** | Whole-Slide H&E Tissue Patches; 2D Convolutional Neural Networks | `tensorflow`, `opencv-python` | Scheduled |
+| **08** | **Genomic Sequence Modeling** | DNA Promoter Motifs & TFBS Detection via 1D-CNN & LSTM | `tensorflow`, `biopython` | Scheduled |
+| **09** | **Explainable AI (XAI) & Biomarker Extraction** | TreeSHAP and KernelSHAP Feature Attributions for Clinical Models | `shap`, `scikit-learn` | Scheduled |
+| **10** | **Capstone Project** | End-to-End Multi-Omics Disease Prediction & Model Audit | Full ML/DL Stack | Scheduled |
 
 ---
 
-## Lab Execution & Submission Protocol
+## 4. Execution & Submission Guidelines
 
-1. **Working in Virtual Environments:**
-   Always ensure your `gcu-aiml-bioinfo` Conda environment is active before starting:
-   ```bash
-   conda activate gcu-aiml-bioinfo
-   ```
-2. **Notebook Cleanliness (`nbstripout`):**
-   Prior to submitting code or pushing to your repository fork, clean notebook execution outputs so large figures and raw tables do not inflate the Git history:
-   ```bash
-   pre-commit run --all-files
-   ```
-3. **Assessment & Grading:**
-   Laboratory performance constitutes a major component of your Continuous Internal Assessment (CIA). Refer to [assessments/README.md](../assessments/README.md) for detailed evaluation rubrics and submission deadlines.
+### Computational Environment
+Always activate the course Conda environment before launching Jupyter:
+```bash
+conda activate gcu-aiml-bioinfo
+```
+
+### Git & Notebook Hygiene
+Prior to committing work or submitting pull requests, clear large execution plots and binary outputs using `nbstripout`:
+```bash
+pre-commit run --all-files
+```
+
+### Submission Protocol via GitHub Issues
+1. Complete the practical notebook, diagnostic plots, and the independent challenge extension.
+2. Open a **New Issue** on the course repository titled:
+   `[Lab Exercise 01 Submission] - <Your Name / Group Name>`
+3. Embed your model comparison table, ROC-AUC curve visualization, 3-sentence biological takeaway, and AI tool disclosure statement following the rubric in [labs/lab_01_binary_classification_pipeline/README.md](lab_01_binary_classification_pipeline/README.md).
