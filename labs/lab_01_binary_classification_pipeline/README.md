@@ -10,6 +10,7 @@ ai_tier: "Tier 3: AI Collaboration (Disclosed)"
 **Course Code:** `02BMSBI24365` — AI and ML in Bioinformatics  
 **Target Audience:** M.Sc. Bioinformatics (Semester III)  
 **Assigned AI Tier:** Tier 3: AI Collaboration (Disclosed)  
+**Session Agendas:** [Day 16 Student Agenda](day_16_student_agenda.md) | [Day 17 Student Agenda](day_17_student_agenda.md)  
 **Primary Deliverable:** Executable Jupyter Notebook (`lab_01_binary_classification_pipeline.ipynb`)  
 **Submission Channel:** Course GitHub Repository via **GitHub Issues** (Milestone / Lab Exercise 1 Submission)
 

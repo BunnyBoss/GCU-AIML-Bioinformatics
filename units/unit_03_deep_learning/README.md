@@ -57,6 +57,7 @@ Unit 3 introduces **Deep Learning (DL)** architectures that learn hierarchical f
 | [3.1_neural_networks_primer.md](3.1_neural_networks_primer.md) | Theory Primer (Part 1) | Architectural Foundations: Tabular bottlenecks, representation learning, biological vs. artificial neurons, dot product math ($\mathbf{w}^T\mathbf{x} + b$), activation functions (Sigmoid, ReLU), and multi-layer stacks. |
 | [3.1_how_neural_networks_learn.md](3.1_how_neural_networks_learn.md) | Theory Primer (Part 2) | Training Foundations: Forward propagation step-by-step, loss functions (BCE, CCE, MSE), backpropagation via chain rule, gradient descent & Adam, epochs/batches, and regularization (Dropout, Early Stopping, Scaling). |
 | [3.1_intro_ann_keras.ipynb](3.1_intro_ann_keras.ipynb) | Practical Notebook | Minimal Keras Workflow: 4-step implementation on our two-biomarker (*HER2/ERBB2* and *ESR1*) breast cancer cohort, untrained vs. trained predictions, loss curves, and 2D decision boundary visualization. |
+| [3.4_intro_to_agentic_coding.md](3.4_intro_to_agentic_coding.md) | Theory & Workflow Primer | Agentic AI Foundations: The 4 coding generations, in-IDE context-aware tools (Copilot, Claude Code, Antigravity), autonomous multi-tool agent ecosystems (OpenClaw, Hermes, Pi, Muse), and practical rules for bioinformatic workflows. |
 
 ---
 
