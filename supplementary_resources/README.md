@@ -17,6 +17,7 @@ Modern bioinformatics requires both strong algorithmic knowledge and proficient 
 |---|---|---|
 | [conda_environment_guide.md](conda_environment_guide.md) | **Conda & Mamba Environments** | Creating reproducible virtual environments, handling package channel priority (`conda-forge`, `bioconda`), managing dependencies, and resolving conflicts. |
 | [git_workflow_guide.md](git_workflow_guide.md) | **Git & GitHub Workflows** | Git version control fundamentals, repository cloning, branching, staging, pre-commit hooks (`nbstripout`), and remote collaboration. |
+| [3.4_intro_to_agentic_coding.md](3.4_intro_to_agentic_coding.md) | **Agentic Coding & AI-Assisted Engineering** | Overview of coding generations (Gen 1–4), in-IDE agent tooling (Copilot, Claude Code, Antigravity), autonomous frameworks (OpenClaw, Hermes, Pi, Muse), and bioinformatic engineering practices (supplementary practical guide). |
 
 ---
 

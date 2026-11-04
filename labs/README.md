@@ -19,25 +19,26 @@ Each practical exercise follows a rigorous, reproducible 5-stage architecture:
 
 ---
 
-## 2. Active Practical (Available Now)
+## 2. Active Practicals (Available Now)
 
 | Practical | Directory | Title & Focus | Biological Cohort | Primary Stack | Status |
 |---|---|---|---|---|---|
-| **Lab Exercise 01** | [lab_01_binary_classification_pipeline/](lab_01_binary_classification_pipeline/) | **End-to-End Binary Classification Pipeline** | TCGA-BRCA RNA-seq Primary Tumors ($n = 670, p = 60$); PAM50 subtype prediction (Luminal A vs. Basal-like). | `pandas`, `scikit-learn`, `tensorflow` | 🟢 **Active** |
+| **Lab Exercise 01** | [lab_01_binary_classification_pipeline/](lab_01_binary_classification_pipeline/) | **End-to-End Binary Classification Pipeline** | TCGA-BRCA RNA-seq Primary Tumors ($n = 670, p = 60$); PAM50 subtype prediction (Luminal A vs. Basal-like). | `pandas`, `scikit-learn`, `tensorflow` | 🟢 **Active (Day 16)** |
+| **Lab Exercise 02** | [lab_02_regression_pipeline/](lab_02_regression_pipeline/) | **End-to-End Regression Pipeline** | Clinical Diabetes Cohort ($n = 442, p = 10$); Quantitative 1-year disease progression prediction. | `pandas`, `scikit-learn`, `seaborn` | 🟢 **Active (Day 19)** |
 
 ### Lab Exercise 01 Overview
 * **Folder:** [labs/lab_01_binary_classification_pipeline/](lab_01_binary_classification_pipeline/)
 * **Primary Deliverable:** [lab_01_binary_classification_pipeline.ipynb](lab_01_binary_classification_pipeline/lab_01_binary_classification_pipeline.ipynb)
 * **Practical Guide:** [labs/lab_01_binary_classification_pipeline/README.md](lab_01_binary_classification_pipeline/README.md)
 * **Dataset Asset:** `data/tcga_brca_expression.csv` (pre-assembled from raw TCGA cBioPortal files)
-* **Key Tasks:**
-  1. Ingest curated primary breast tumor cohort (670 patients $\times$ 60 PAM50 and oncogenic driver genes).
-  2. Implement strict leak-free train/test partition ($80/20$) with training-only `StandardScaler`.
-  3. Benchmark three complementary model families:
-     * **Logistic Regression:** Linear baseline with gene Odds Ratios ($\text{OR} = e^{w_j}$).
-     * **Random Forest:** 100-tree ensemble with Gini feature importance ranking.
-     * **Keras ANN:** Deep multilayer perceptron with Dropout regularization and threshold calibration ($\tau$).
-  4. Formulate a minimal 5-gene point-of-care diagnostic panel (*FOXA1*, *CDC20*, *MELK*, *KIF2C*, *EXO1*).
+* **Key Tasks:** Ingest curated primary breast tumor cohort, enforce zero data leakage, benchmark Logistic Regression, Random Forest, and Keras ANN, and evaluate clinical threshold tuning ($\tau$).
+
+### Lab Exercise 02 Overview
+* **Folder:** [labs/lab_02_regression_pipeline/](lab_02_regression_pipeline/)
+* **Primary Deliverable:** [lab_02_regression_pipeline.ipynb](lab_02_regression_pipeline/lab_02_regression_pipeline.ipynb)
+* **Practical Guide:** [labs/lab_02_regression_pipeline/README.md](lab_02_regression_pipeline/README.md)
+* **Dataset Asset:** `datasets/raw/lab_02_day_19_diabetes_regression_raw.csv` (generated via `datasets/download_scripts/download_lab_02_regression_data.py`)
+* **Key Tasks:** Audit raw data quality (deduplication, anomaly screening, median imputation), conduct EDA, enforce leak-free scaling, benchmark Ridge, Random Forest Regressor, and Gradient Boosting, and evaluate continuous metrics (MAE, RMSE, $R^2$) with residual diagnostics.
 
 ---
 
@@ -47,8 +48,8 @@ The subsequent hands-on experiments will be released sequentially as the course 
 
 | Lab # | Experiment Focus | Biological Domain & Benchmark Problem | Target Stack | Curriculum Schedule |
 |---|---|---|---|---|
-| **01** | **Binary Classification Pipeline** | TCGA-BRCA PAM50 Subtype Classification (Luminal A vs. Basal) | `scikit-learn`, `tensorflow` | **Active (Day 16)** |
-| **02** | **Biological Regression & Epigenetic Clocks** | DNA Methylation Beta Values; Age Prediction via Ridge/Lasso | `scikit-learn`, `scipy` | Scheduled |
+| **01** | **Binary Classification Pipeline** | TCGA-BRCA PAM50 Subtype Classification (Luminal A vs. Basal) | `scikit-learn`, `tensorflow` | 🟢 **Active (Day 16)** |
+| **02** | **End-to-End Regression Pipeline** | Clinical Diabetes Progression Prediction & Metric Diagnostics | `scikit-learn`, `seaborn` | 🟢 **Active (Day 19)** |
 | **03** | **Tumor Diagnosis & Decision Trees** | Diagnostic Fine-Needle Aspirate Features (WDBC); Ensemble Trees | `scikit-learn`, `seaborn` | Scheduled |
 | **04** | **Clinical Metrics & Imbalanced Learning** | Rare Disease Cohort; PR-AUC, Threshold Tuning, Cost Matrices | `scikit-learn`, `yellowbrick` | Scheduled |
 | **05** | **Unsupervised Clustering & PCA** | High-Dimensional Transcriptomic Profiling; PCA & $K$-Means | `scikit-learn`, `matplotlib` | Scheduled |
