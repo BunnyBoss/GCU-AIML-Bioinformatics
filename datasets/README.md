@@ -37,8 +37,9 @@ datasets/
 
 | Identifier | Modality | Dimensions / Size | Primary Course Use | Source / Reference |
 |---|---|---|---|---|
+| **Diabetes Clinical Cohort** | Clinical & Serum Lipid Panel | 442 samples $\times$ 10 features | Lab 02 | Scikit-Learn unscaled cohort (`datasets/download_scripts/download_lab_02_regression_data.py`) |
 | **WDBC** | Clinical & Nuclear Imaging | 569 samples $\times$ 30 features | Lab 03, Lab 04 | UCI ML Repository / Wisconsin Diagnostic Breast Cancer |
-| **Epigenetic Methylation** | Illumina 450k BeadChip | 650 samples $\times$ 500 CpGs | Lab 02 | NCBI GEO (GSE40279 / Hannum Epigenetic Clock) |
+| **Epigenetic Methylation** | Illumina 450k BeadChip | 650 samples $\times$ 500 CpGs | Future Practicals | NCBI GEO (GSE40279 / Hannum Epigenetic Clock) |
 | **TCGA-BRCA RNA-seq** | Transcriptomic Counts | 1,095 samples $\times$ 2,000 HVGs | Lab 01, Lab 05, Lab 10 | The Cancer Genome Atlas (TCGA) via GDC Portal |
 | **Promoter DNA Sequences** | Genomic Sequence (FASTA) | 5,000 sequences $\times$ 200 bp | Lab 08 | Eukaryotic Promoter Database (EPD) / JASPAR |
 | **Breast Histopathology** | Microscopic Imaging (H&E) | 10,000 image patches ($50\times50$ px) | Lab 07 | Kaggle / Janowczyk et al. Histopathology Benchmark |
@@ -48,9 +49,17 @@ datasets/
 
 ## Downloading Datasets Locally
 
-You can download course datasets using simple, direct `curl` commands or via the minimal download script [datasets/download_scripts/download_data.sh](download_scripts/download_data.sh):
+You can download and prepare course datasets using the automated scripts in `datasets/download_scripts/`:
 
-### 1. TCGA-BRCA PanCancer Atlas Files (cBioPortal GitHub)
+### 1. Lab Exercise 02: Diabetes Clinical Regression Cohort
+* **Generation Script:** `datasets/download_scripts/download_lab_02_regression_data.py`
+* **Direct Execution:**
+  ```bash
+  python datasets/download_scripts/download_lab_02_regression_data.py
+  ```
+  Exports the unstandardized cohort table with real-world data quality challenges (duplicates, missing values, non-fitting outliers) to `datasets/raw/lab_02_day_19_diabetes_regression_raw.csv`.
+
+### 2. TCGA-BRCA PanCancer Atlas Files (cBioPortal GitHub)
 * **GitHub Repository:** [`cBioPortal/datahub - brca_tcga_pan_can_atlas_2018`](https://github.com/cBioPortal/datahub/tree/master/public/brca_tcga_pan_can_atlas_2018)
 * **Direct Script Execution:**
   ```bash

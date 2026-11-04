@@ -11,7 +11,7 @@ ai_tier: Full AI (Learning Aid)
 
 **Course Code:** `02BMSBI24365` — AI and ML in Bioinformatics  
 **Primary Computing Environment:** Visual Studio Code (`gcu-aiml-bioinfo` Conda environment)  
-**Primary Theory Guide:** [3.4_intro_to_agentic_coding.md](../3.4_intro_to_agentic_coding.md)  
+**Primary Supplementary Guide:** [3.4_intro_to_agentic_coding.md](../../../supplementary_resources/3.4_intro_to_agentic_coding.md)  
 **Interactive Notebook:** [lab_01_binary_classification_pipeline.ipynb](../../../labs/lab_01_binary_classification_pipeline/lab_01_binary_classification_pipeline.ipynb)  
 
 ---
@@ -64,7 +64,7 @@ ai_tier: Full AI (Learning Aid)
 ---
 
 ## 3. Methodological Briefing: Introduction to Agentic Coding
-*Assigned Primer:* [3.4_intro_to_agentic_coding.md](../3.4_intro_to_agentic_coding.md)
+*Assigned Supplementary Primer:* [3.4_intro_to_agentic_coding.md](../../../supplementary_resources/3.4_intro_to_agentic_coding.md)
 
 * **The Four Coding Generations:**
   1. *Manual:* Syntax memorization and documentation search.
@@ -95,4 +95,4 @@ Work in [lab_01_binary_classification_pipeline.ipynb](../../../labs/lab_01_binar
 
 * [ ] Clean execution outputs using `pre-commit run --all-files` (`nbstripout`).
 * [ ] Open a **New Issue** on the course repository with your model comparison table, ROC curve plot, and 3-sentence biological interpretation.
-* [ ] Read [3.4_intro_to_agentic_coding.md](../3.4_intro_to_agentic_coding.md) to prepare for the upcoming mid-November Agentic Coding & Vibe Coding Workshop.
+* [ ] Read [3.4_intro_to_agentic_coding.md](../../../supplementary_resources/3.4_intro_to_agentic_coding.md) to prepare for the upcoming mid-November Agentic Coding & Vibe Coding Workshop.
